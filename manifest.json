@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+  "name": "Truck Team Helper DL",
+  "version": "1.0",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+  {
+    "matches": [
+      "https://cl.dispatchland.com/loads/view/*"
+    ],
+    "js": ["content.js"]
+  }
+],
+"browser_action": {
+    
+  }
+}
