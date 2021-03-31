@@ -48,7 +48,6 @@ function getTTElements(){
     TTElements.push("Carolina Logistics");
     TTElements.push(addresses);
     TTElements.push(rate);
-	
 
 	return TTElements;
 }
