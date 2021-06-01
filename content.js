@@ -101,7 +101,7 @@ function getPuDate(loadBlockInfo){
 
 	let date = 	loadBlockInfo[1].getElementsByClassName("first-pick-up")[0];
 
-	date = date.getElementsByClassName("tooltip-child-wrapper")[0];
+	date = date.getElementsByClassName("styles_child__3uVE-")[0];
 
 	date = date.querySelector("div").textContent;
 
