@@ -53,13 +53,9 @@ function getTTElements() {
     TTElements.push("");
     TTElements.push(loadNumber);
     TTElements.push(ref);
-
     TTElements.push("");
-    // TTElements.push("");
-
     TTElements.push(customer);
-    // TTElements.push("Carolina Logistics");
-    TTElements.push(addresses);
+	TTElements.push(addresses);
 	TTElements.push("");
 	TTElements.push("");
 	TTElements.push("");
@@ -69,7 +65,9 @@ function getTTElements() {
 	TTElements.push("");
 	TTElements.push("");
 	TTElements.push(team);
-    // TTElements.push(rate);
+
+	// TTElements.push("Carolina Logistics");
+	// TTElements.push(rate);
 
     return TTElements;
 }
@@ -102,7 +100,13 @@ function getStrongSelectorFromTable(tableIndex) {
 }
 
 function getCustomer() {
-    return getStrongSelectorFromTable(1).textContent;
+    let customer =  getStrongSelectorFromTable(1).textContent;
+    let dispatcher = getDispatcher();
+
+    if (dispatcher === "sync sync") {
+        return customer;
+    } else
+        return "";
 }
 
 function getLoadNumber(loadBlockInfo) {
